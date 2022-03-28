@@ -959,3 +959,12 @@ blockquote {
 	top: 0;
 	left: -2400px;
 }
+/* Portrait and Landscape */
+@media (max-width: 768px) {
+  img#hero_img {
+      display:none!important;
+  }
+  section#hero_sec {
+    padding: 20px 20px 50px 20px
+  }
+}
