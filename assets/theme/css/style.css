@@ -3,6 +3,28 @@ section {
   background-color: #ffffff;
 }
 
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #32c7ec #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #32c7ec;
+    border-radius: 10px;
+    border: -1px none #ffffff;
+  }
+
 body {
   font-style: normal;
   line-height: 1.5;
