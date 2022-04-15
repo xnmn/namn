@@ -1021,3 +1021,6 @@ blockquote {
   height: 50px;
   opacity: .5;
 }
+textarea.form-control {
+  height: 200px;
+}
