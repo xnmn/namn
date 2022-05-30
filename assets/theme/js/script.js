@@ -42,7 +42,6 @@ function labnolIframe(div) {
     "src",
     "https://www.youtube.com/embed/" + div.dataset.id + "?autoplay=1&rel=0"
   );
-  iframe.setAttribute("style", "height:50vh; width:100%;")
   iframe.setAttribute("frameborder", "0");
   iframe.setAttribute("allowfullscreen", "1");
   iframe.setAttribute(
