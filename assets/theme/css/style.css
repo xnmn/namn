@@ -983,13 +983,29 @@ blockquote {
 }
 /* Portrait and Landscape */
 @media (max-width: 768px) {
-  img#hero_img {
+  /* img#hero_img {
       display:none!important;
-  }
+  } */
   section#hero_sec {
-    padding: 20px 20px 50px 20px
+    padding: 20px 20px 0px 20px;
+  }
+  .cid-sGrgSEVjMH .row {
+    flex-direction: column-reverse!important;
+  }
+  .cid-sGrgSEVjMH .image-wrapper {
+    padding: 20px 20px 0px 20px!important;
+  }
+  .hero-txt {
+    padding-top: 20%;
+  }
+  .cursor {
+    display: none;
+  }
+  .cursor2 {
+    display: none;
   }
 }
+
 .cursor {
   z-index: 9999;
   width: 30px;
