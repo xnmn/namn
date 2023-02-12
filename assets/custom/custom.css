@@ -1,0 +1,37 @@
+.title {
+  line-height: 48px;
+  font-size: 2rem;
+}
+.testimonials-4 .slick-arrow {
+  margin-left: 25%;
+}
+.author {
+  padding-bottom: 20px;
+  margin-left: 15px;
+}
+.calendly-badge-widget {
+  display: none;
+}
+.header-3 .slick-slide img {
+  object-fit: contain;
+}
+.profile-page .page-header .container {
+  padding-top: 15vh;
+}
+.contact-page  .infos {
+  border-bottom: 0px!important;
+}
+@media (max-width: 768px) { 
+  .header-3 .title {
+    font-size: 1.5rem;
+    line-height: 2;
+  }
+  .title {
+    font-size: 1.5rem;
+    margin-top: 30px;
+  }
+  
+  .profile-page .page-header .path {
+    display: none;
+  }
+}
