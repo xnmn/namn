@@ -3,6 +3,7 @@ function getUserPreference() {
 }
 function saveUserPreference(userPreference) {
   localStorage.setItem('theme', userPreference);
+  ballState();
 }
 
 function getAppliedMode(userPreference) {
