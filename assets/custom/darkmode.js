@@ -3,6 +3,7 @@ function getUserPreference() {
 }
 function saveUserPreference(userPreference) {
   localStorage.setItem('theme', userPreference);
+  ballState();
 }
 
 function getAppliedMode(userPreference) {
@@ -56,6 +57,7 @@ themeToggler.onclick = () => {
 
 
 function ballState() {
+  console.log(userPreference);
   let ball = document.querySelector(".ball");
   if (userPreference === 'dark') {
     ball.classList.add("dark-ball");
@@ -63,5 +65,3 @@ function ballState() {
     ball.classList.remove("dark-ball");
   }
 }
-
-window.onload = ballState();
