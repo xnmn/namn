@@ -3,7 +3,6 @@ function getUserPreference() {
 }
 function saveUserPreference(userPreference) {
   localStorage.setItem('theme', userPreference);
-  ballState();
 }
 
 function getAppliedMode(userPreference) {
@@ -22,7 +21,6 @@ function getAppliedMode(userPreference) {
 
 function setAppliedMode(mode) {
   document.documentElement.dataset.appliedMode = mode;
-  ballState();
 }
 
 function rotatePreferences(userPreference) {
@@ -60,16 +58,10 @@ themeToggler.onclick = () => {
 function ballState() {
   let ball = document.querySelector(".ball");
   if (userPreference === 'dark') {
-
     ball.classList.add("dark-ball");
   } else {
     ball.classList.remove("dark-ball");
   }
 }
 
-
-// const checkbox = document.getElementById("checkbox")
-// checkbox.addEventListener("change", () => {
-//   document.body.classList.toggle("dark-mode")
-// })
-
+window.onload = ballState();
