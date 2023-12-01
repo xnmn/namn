@@ -3,7 +3,6 @@ function getUserPreference() {
 }
 function saveUserPreference(userPreference) {
   localStorage.setItem('theme', userPreference);
-  ballState();
 }
 
 function getAppliedMode(userPreference) {
@@ -43,18 +42,16 @@ const themeToggler = document.getElementById("checkbox");
 
 let userPreference = getUserPreference();
 setAppliedMode(getAppliedMode(userPreference));
-themeDisplay.innerText = '';
+ballState();
 
 themeToggler.onclick = () => {
 
   const newUserPref = rotatePreferences(userPreference);
   userPreference = newUserPref;
   saveUserPreference(newUserPref);
-  themeDisplay.innerText = '';
   setAppliedMode(getAppliedMode(newUserPref));
   ballState();
 }
-
 
 function ballState() {
   console.log(userPreference);
