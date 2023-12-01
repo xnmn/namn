@@ -98,7 +98,9 @@
             <p class="description">
               Say hello to being fully booked consistently<br>and see your revenue boost <br>month after month.
             </p>
-            <a href="./book.html" class="btn btn-lg btn-primary">Book Slot</a>
+            <div class="flex-center home-cta-wrapper">
+              <div class="animated-border-box-glow"></div><a href="./book.html" class="btn btn-lg home-cta btn-primary">Book Slot</a>
+            </div>
           </div>
           <div class="col-md-12 col-md-6">
             
@@ -392,8 +394,11 @@
   <script>
     $(".center").slick({dots:!1,infinite:!0,centerMode:!0,autoplay:!0,autoplaySpeed:2500,slidesToShow:4,slidesToScroll:1,responsive:[{breakpoint:1024,settings:{slidesToShow:3,slidesToScroll:1}},{breakpoint:600,settings:{slidesToShow:2,slidesToScroll:1}},{breakpoint:480,settings:{slidesToShow:1,slidesToScroll:1}}]}),$(".center2").slick({dots:!1,infinite:!0,centerMode:!0,autoplay:!0,autoplaySpeed:2500,slidesToShow:4,slidesToScroll:1,responsive:[{breakpoint:1024,settings:{slidesToShow:3,slidesToScroll:1}},{breakpoint:600,settings:{slidesToShow:2,slidesToScroll:1}},{breakpoint:480,settings:{slidesToShow:2,slidesToScroll:1}}]}),$(window).scroll((function(){$(window).scrollTop()>500?$(".calendly-badge-widget").fadeIn("slow"):$(".calendly-badge-widget").hide()}));
   </script>
-<script defer src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/namngupta?hide_gdpr_banner=1', text: 'Book Slot', color: '#e14eca', textColor: '#ffffff', branding: false }); }</script>
+  <!-- Calendly badge widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/namngupta/45min?hide_event_type_details=1', text: 'Schedule time with me', color: '#d55e2d', textColor: '#ffffff', branding: undefined }); }</script>
+<!-- Calendly badge widget end -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 <script src="./assets/custom/animations.js"></script>
