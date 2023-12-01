@@ -1,5 +1,5 @@
 function getUserPreference() {
-  return localStorage.getItem('theme') || 'system';
+  return localStorage.getItem('theme') || 'light';
 }
 function saveUserPreference(userPreference) {
   localStorage.setItem('theme', userPreference);
@@ -21,11 +21,12 @@ function getAppliedMode(userPreference) {
 
 function setAppliedMode(mode) {
   document.documentElement.dataset.appliedMode = mode;
+  ballState();
 }
 
 function rotatePreferences(userPreference) {
   if (userPreference === 'system') {
-    return 'light';
+    return 'light'
   }
   if (userPreference === 'light') {
     return 'dark';
@@ -42,15 +43,13 @@ const themeToggler = document.getElementById("checkbox");
 
 let userPreference = getUserPreference();
 setAppliedMode(getAppliedMode(userPreference));
-ballState();
+
 
 themeToggler.onclick = () => {
-
   const newUserPref = rotatePreferences(userPreference);
   userPreference = newUserPref;
   saveUserPreference(newUserPref);
   setAppliedMode(getAppliedMode(newUserPref));
-  ballState();
 }
 
 function ballState() {
